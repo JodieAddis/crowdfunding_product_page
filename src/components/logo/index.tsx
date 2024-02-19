@@ -1,11 +1,11 @@
 import React from "react";
 
-const Logo: React.FC = () => {
+const Component: React.FC = () => {
   return (
-    <>
-      <h1 className="text-6xl">crowdfund</h1>
-    </>
+    <div className="mt-14 ml-24">
+      <h1 className="text-2xl font-extrabold">crowdfund</h1>
+    </div>
   );
 };
 
-export default Logo;
+export default Component;

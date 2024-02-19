@@ -1,15 +1,15 @@
 import React from "react";
 
-const NavBar: React.FC = () => {
+const Component: React.FC = () => {
   return (
-    <>
-      <ul>
-        <li>about</li>
-        <li>discover</li>
-        <li>get started</li>
+    <div className="flex flex-row mt-14 mr-24">
+      <ul className="flex flex-row text-sm capitalize font-bold">
+        <li className="mx-3 cursor-pointer">about</li>
+        <li className="mx-3 cursor-pointer">discover</li>
+        <li className="mx-3 cursor-pointer">get started</li>
       </ul>
-    </>
+    </div>
   );
 };
 
-export default NavBar;
+export default Component;

@@ -1,13 +1,23 @@
-import Logo from "../logo";
-import NavBar from "../navbar";
+import Logo from "../Logo";
+import NavBar from "../NavBar";
+import headerDesktop from "../../assets/img/header-desktop.jpg";
 
-const Header: React.FC = () => {
+const Component: React.FC = () => {
   return (
-    <header>
+    <header
+      className="flex justify-between text-white h-[450px] bg-cover"
+      style={{ backgroundImage: `url(${headerDesktop})` }}
+    >
       <Logo />
       <NavBar />
     </header>
   );
 };
 
-export default Header;
+export default Component;
+
+{
+  /* <div class="bg-[url('/assets/images/background.jpg')] bg-cover bg-center h-screen">
+    <!-- Votre contenu ici -->
+</div> */
+}
