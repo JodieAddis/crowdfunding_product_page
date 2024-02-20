@@ -1,15 +1,16 @@
 import ProjectTitle from "../ProjectTitle";
-import ProjectDescription from "../ProjectDescription";
-import BackButton from "../BackButton";
-import BookmarkButton from "../BookmarkButton";
+import TextComponent from "../TextComponent";
+import Button from "../Button";
 
 const Component: React.FC = () => {
+  const text =
+    "A beautiful & handcrafted monitor stand to reduce neck and eye strain";
   return (
     <div>
       <ProjectTitle />
-      <ProjectDescription />
-      <BackButton />
-      <BookmarkButton />
+      <TextComponent text={text} />
+      <Button text="Back this project" />
+      <Button isIcon={true} text="Bookmarked" />
     </div>
   );
 };
