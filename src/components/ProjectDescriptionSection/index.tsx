@@ -27,7 +27,7 @@ const Component = () => {
             textButton="Select reward"
           />
         </section>
-        <section>
+        <section className="mx-5 border-solid border-silver border-1 rounded-xl bg-white">
           <ProjectType
             title="Black Edition Stand"
             subtitle="Pledge $75 or more"

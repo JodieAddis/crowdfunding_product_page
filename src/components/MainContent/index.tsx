@@ -8,10 +8,12 @@ const Component: React.FC = () => {
       <div className="-mt-36 w-80 lg:w-1/2 mb-10">
         <ProjectHeaderSection />
       </div>
-      <div className="bg-white  w-1/2 ">
+      <div className="bg-white w-80 lg:w-1/2 border-wildSand border-solid border-2 rounded-xl pt-8">
         <ProjectStatsSection />
       </div>
-      <ProjectDescriptionSection />
+      <div className="bg-white">
+        <ProjectDescriptionSection />
+      </div>
     </main>
   );
 };

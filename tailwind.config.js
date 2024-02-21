@@ -8,7 +8,7 @@ module.exports = {
         black: "#000000",
         wildSand: "#f6f6f6", //border section
         silverChalice: "#a0a0a0",
-        silver: "#cbcbcb", //Text color
+        silver: "#7a7a7a", //Text color
         aquaHaze: "#f4f8f9", //bookmark button
         doveGray: "#707070",
         keppel: "#3cb4ab", //acitve button

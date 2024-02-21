@@ -11,8 +11,8 @@ const Component: React.FC<textContent> = ({
 }) => {
   return (
     <>
-      <h3>{title}</h3>
-      <div>
+      <h3 className="text-lg font-bold">{title}</h3>
+      <div className="text-silver text-sm">
         <p>{first_text}</p>
         <p>{second_text}</p>
       </div>
