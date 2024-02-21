@@ -13,7 +13,10 @@ const Component: React.FC = () => {
       </div>
       <div className="bg-white border-solid border-wildSand border-2 rounded-xl self-center">
         <ProjectTitle />
-        <TextComponent text={text} positionCSS="center" />
+        <TextComponent
+          text={text}
+          CSS="text-center mx-2 lg:mx-0 font-normal lg:font-medium"
+        />
         <div className="flex flex-row justify-around my-10">
           <Button
             text="Back this project"
