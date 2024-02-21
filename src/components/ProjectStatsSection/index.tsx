@@ -1,29 +1,18 @@
-import TextComponent from "../TextComponent";
-import StatsNumbers from "../StatsNumbers";
+import ProjectInformation from "../ProjectInformation";
 
 const Component: React.FC = () => {
-  const firstSectionText = "of $100,000 backed";
-  const secondSectionText = "total backers";
-  const thirdSectionText = "days left";
-
   return (
     <>
       <div>
         <section>
-          <StatsNumbers number="$89,914" />
-          <TextComponent text={firstSectionText} />
+          <ProjectInformation title="$89,914" text="of $100,000 backed" />
         </section>
         <section>
-          <StatsNumbers number="5,007" />
-          <TextComponent text={secondSectionText} />
+          <ProjectInformation title="5,007" text="total backers" />
         </section>
         <section>
-          <StatsNumbers number="56" />
-          <TextComponent text={thirdSectionText} />
+          <ProjectInformation title="56" text="days left" />
         </section>
-      </div>
-      <div>
-        <input type="range" value="30" min={0} max={100} name="" id="" />
       </div>
     </>
   );

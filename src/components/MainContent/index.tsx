@@ -1,5 +1,6 @@
 import ProjectHeaderSection from "../ProjectHeaderSection";
 import ProjectStatsSection from "../ProjectStatsSection";
+import ProjectDescriptionSection from "../ProjectDescriptionSection";
 
 const Component: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const Component: React.FC = () => {
       <div className="bg-white  w-1/2 ">
         <ProjectStatsSection />
       </div>
-      {/* <ProjectInfoSection /> */}
+      <ProjectDescriptionSection />
     </main>
   );
 };
