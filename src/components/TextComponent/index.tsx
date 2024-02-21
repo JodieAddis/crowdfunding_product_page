@@ -1,11 +1,12 @@
 interface TextProps {
   text: string;
+  CSS: string;
 }
 
-const Component: React.FC<TextProps> = (props) => {
+const Component: React.FC<TextProps> = ({ text, CSS }) => {
   return (
     <>
-      <p>{props.text}</p>
+      <p className={`${CSS} text-silverChalice`}>{text}</p>
     </>
   );
 };
