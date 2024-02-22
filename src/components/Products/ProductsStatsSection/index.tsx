@@ -1,19 +1,19 @@
-import ProjectInformation from "../ProjectInformation";
+import ProductsNumberInfo from "../ProductsNumberInfo";
 
 const Component: React.FC = () => {
   return (
     <>
       <div>
         <section className="flex flex-col items-center mb-8">
-          <ProjectInformation title="$89,914" text="of $100,000 backed" />
+          <ProductsNumberInfo title="$89,914" text="of $100,000 backed" />
           <div className="border-wildSand border-b-2 border-solid w-20 flex self-center"></div>
         </section>
         <section className="flex flex-col items-center mb-8">
-          <ProjectInformation title="5,007" text="total backers" />
+          <ProductsNumberInfo title="5,007" text="total backers" />
           <div className="border-wildSand border-b-2 border-solid w-20 flex self-center"></div>
         </section>
         <section className="flex flex-col items-center mb-8">
-          <ProjectInformation title="56" text="days left" />
+          <ProductsNumberInfo title="56" text="days left" />
         </section>
         <section className="flex justify-center">
           <input type="range" className="accent-keppel bg-wildSand w-64 mb-8" />

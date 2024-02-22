@@ -1,4 +1,4 @@
-import IconMark from "../IconMark";
+import IconMark from "../icons/IconMark";
 
 interface ButtonProps {
   isIcon?: boolean;
