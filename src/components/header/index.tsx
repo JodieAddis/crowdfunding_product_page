@@ -9,7 +9,9 @@ const Component: React.FC = () => {
       style={{ backgroundImage: `url(${headerDesktop})` }}
     >
       <LogoName />
-      <NavBar />
+      <div className="flex justify-center">
+        <NavBar />
+      </div>
     </header>
   );
 };
