@@ -12,19 +12,19 @@ import Paragraph from "../../../typographies/Paragraph";
 const Component = () => {
   return (
     <>
-      <div>
+      <div className="mt-4 mx-6">
         <Heading
           kind="h3"
           content="About this project"
-          css="text-lg font-bold"
+          css="text-lg font-bold mb-4"
         />
         <div className="text-silver text-sm">
-          <Paragraph kind="p" content={aboutSectionPartOne} />
-          <Paragraph kind="p" content={aboutSectionPartTwo} />
+          <Paragraph kind="p" content={aboutSectionPartOne} css="mb-6" />
+          <Paragraph kind="p" content={aboutSectionPartTwo} css="mb-6" />
         </div>
       </div>
       <div>
-        <section>
+        <section className="subsection mb-6">
           <ProductsInfo
             title="Bamboo Stand"
             subtitle="Pledge $25 or more"
@@ -34,7 +34,7 @@ const Component = () => {
             textButton="Select reward"
           />
         </section>
-        <section className="mx-5 border-solid border-silver border-1 rounded-xl bg-white">
+        <section className="subsection mb-6">
           <ProductsInfo
             title="Black Edition Stand"
             subtitle="Pledge $75 or more"
@@ -44,7 +44,7 @@ const Component = () => {
             textButton="Select reward"
           />
         </section>
-        <section>
+        <section className="subsection mb-8">
           <ProductsInfo
             title="Mahogany Special Edition"
             subtitle="Pledge $200 or more"

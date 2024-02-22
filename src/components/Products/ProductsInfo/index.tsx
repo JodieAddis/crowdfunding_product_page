@@ -22,10 +22,10 @@ const Component: React.FC<textContent> = ({
 }) => {
   return (
     <>
-      <Headings kind="h4" content={title} css="text-sm font-bold" />
-      <Paragraph kind="p" content={subtitle} css="text-keppel text-sm" />
-      <Paragraph kind="p" content={text} css="text-silver text-sm" />
-      <div className="flex flex-row">
+      <Headings kind="h4" content={title} css="text-sm font-bold mb-2" />
+      <Paragraph kind="p" content={subtitle} css="text-keppel text-sm mb-5" />
+      <Paragraph kind="p" content={text} css="text-silver text-sm mb-5" />
+      <div className="flex flex-row mb-4">
         <Paragraph kind="p" content={numberPrice} css="text-3xl font-bold" />
         <Paragraph kind="p" content={textPrice} css="text-silver self-center" />
       </div>
