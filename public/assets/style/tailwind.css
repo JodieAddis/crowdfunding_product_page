@@ -9,4 +9,10 @@
   .subsection {
     @apply border-wildSand  border-solid border-2 rounded-lg mx-6 py-6 px-4;
   }
+  .desktop-menu {
+    @apply flex-row;
+  }
+  .mobile-menu {
+    @apply flex-col;
+  }
 }
