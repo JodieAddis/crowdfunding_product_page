@@ -1,4 +1,4 @@
-import IconMark from "../icons/IconMark";
+import IconBookMark from "../../icons/IconBookMark";
 
 interface ButtonProps {
   isIcon?: boolean;
@@ -9,8 +9,8 @@ interface ButtonProps {
 const Component: React.FC<ButtonProps> = ({ isIcon, text, css }) => {
   return (
     <div>
-      <button className={`flex flex-row font-bold rounded-full ${css}`}>
-        {isIcon && <IconMark />}
+      <button className={`flex flex-row rounded-full font-bold ${css}`}>
+        {isIcon && <IconBookMark />}
         <p className="self-center py-4">{text}</p>
       </button>
     </div>

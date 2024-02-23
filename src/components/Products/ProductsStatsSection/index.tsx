@@ -1,22 +1,23 @@
+import PriceSectionLayout from "../../../layout/PriceSectionLayout";
 import ProductsNumberInfo from "../ProductsNumberInfo";
 
 const Component: React.FC = () => {
   return (
     <>
       <div>
-        <section className="flex flex-col items-center mb-8">
+        <PriceSectionLayout>
           <ProductsNumberInfo title="$89,914" text="of $100,000 backed" />
-          <div className="border-wildSand border-b-2 border-solid w-20 flex self-center"></div>
-        </section>
-        <section className="flex flex-col items-center mb-8">
+          <div className="flex w-20 self-center border-b-2 border-solid border-wildSand"></div>
+        </PriceSectionLayout>
+        <PriceSectionLayout>
           <ProductsNumberInfo title="5,007" text="total backers" />
-          <div className="border-wildSand border-b-2 border-solid w-20 flex self-center"></div>
-        </section>
-        <section className="flex flex-col items-center mb-8">
+          <div className="flex w-20 self-center border-b-2 border-solid border-wildSand"></div>
+        </PriceSectionLayout>
+        <PriceSectionLayout>
           <ProductsNumberInfo title="56" text="days left" />
-        </section>
+        </PriceSectionLayout>
         <section className="flex justify-center">
-          <input type="range" className="accent-keppel bg-wildSand w-64 mb-8" />
+          <input type="range" className="mb-8 w-64 bg-wildSand accent-keppel" />
         </section>
       </div>
     </>

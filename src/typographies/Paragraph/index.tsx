@@ -1,12 +1,7 @@
-import { ParagraphProps } from "../../types/interfaces";
+import { TypographiesProps } from "../../types/interfaces";
 
-const Typographies = ({ kind, content, css }: ParagraphProps) => {
-  switch (kind) {
-    case "p":
-      return <p className={css}>{content}</p>;
-    case "span":
-      return <span className={css}>{content}</span>;
-  }
-};
+const Typographies = ({ content, css }: TypographiesProps) => (
+  <p className={css}>{content}</p>
+);
 
 export default Typographies;

@@ -1,4 +1,4 @@
-const Component = () => {
+const Icon = () => {
   return (
     <div className="m-0 mr-3">
       <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
@@ -11,4 +11,4 @@ const Component = () => {
   );
 };
 
-export default Component;
+export default Icon;

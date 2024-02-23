@@ -12,15 +12,15 @@ import Paragraph from "../../../typographies/Paragraph";
 const Component = () => {
   return (
     <>
-      <div className="mt-4 mx-6">
+      <div className="mx-6 mt-4">
         <Heading
           kind="h3"
           content="About this project"
           css="text-lg font-bold mb-4"
         />
-        <div className="text-silver text-sm">
-          <Paragraph kind="p" content={aboutSectionPartOne} css="mb-6" />
-          <Paragraph kind="p" content={aboutSectionPartTwo} css="mb-6" />
+        <div className="text-sm text-silver">
+          <Paragraph content={aboutSectionPartOne} css="mb-6" />
+          <Paragraph content={aboutSectionPartTwo} css="mb-6" />
         </div>
       </div>
       <div>

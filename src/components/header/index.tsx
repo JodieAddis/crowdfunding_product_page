@@ -1,14 +1,15 @@
-import NavBar from "../NavBar";
 import headerDesktop from "../../assets/img/header-desktop.jpg";
-import LogoName from "../icons/LogoName";
+import IconLogo from "../../icons/IconLogo";
+import NavBar from "../NavBar";
 
 const Component: React.FC = () => {
   return (
     <header
-      className="flex justify-between text-white h-[450px] bg-cover"
+      className="flex h-[450px] justify-between bg-cover text-white"
       style={{ backgroundImage: `url(${headerDesktop})` }}
     >
-      <LogoName />
+      <IconLogo isLogo={false} />
+
       <div className="flex justify-center">
         <NavBar />
       </div>

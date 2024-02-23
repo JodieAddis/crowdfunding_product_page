@@ -1,10 +1,6 @@
-interface TypographiesProps {
+export interface TypographiesProps {
   content: string;
   css?: string;
-}
-
-export interface ParagraphProps extends TypographiesProps {
-  kind: "p" | "span";
 }
 
 export interface HeadingsProps extends TypographiesProps {
