@@ -47,6 +47,12 @@ const Component: React.FC = () => {
             </>
           )}
         </div>
+        <Button
+          text="Bookmarked"
+          isIcon={true}
+          css="bg-aquaHaze text-surfieGreen hover:text-doveGray lg:pr-10"
+          cssText="hidden lg:flex"
+        />
       </div>
     </>
   );

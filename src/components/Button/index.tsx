@@ -1,25 +1,18 @@
 import IconBookMark from "../../icons/IconBookMark";
-import useScreenSize from "../../hook/useScreenSize";
 
 interface ButtonProps {
   isIcon?: boolean;
   text: string;
   css: string;
+  cssText?: string;
 }
 
-const Component: React.FC<ButtonProps> = ({ isIcon, text, css }) => {
-  const screenSize = useScreenSize();
+const Component: React.FC<ButtonProps> = ({ isIcon, text, css, cssText }) => {
   return (
     <div>
       <button className={`flex flex-row rounded-full font-bold ${css}`}>
-        {screenSize ? (
-          <>{isIcon && <IconBookMark />}</>
-        ) : (
-          <>
-            {isIcon && <IconBookMark />}
-            <p className="self-center py-4">{text}</p>
-          </>
-        )}
+        {isIcon && <IconBookMark />}
+        <p className={`self-center py-4 ${cssText}`}>{text}</p>
       </button>
     </div>
   );

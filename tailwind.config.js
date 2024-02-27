@@ -15,6 +15,10 @@ module.exports = {
         surfieGreen: "#157a74", //disabled button
         alabaster: "#fafafa", // main bg
       },
+      backgroundImage: {
+        headerDesktop: "url('/src/assets/img/header-desktop.jpg')",
+        headerMobile: "url('/src/assets/img/header-mobile.jpg')",
+      },
     },
   },
   plugins: [],

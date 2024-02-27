@@ -1,13 +1,11 @@
-import headerDesktop from "../../assets/img/header-desktop.jpg";
-// import headerMobile from "../../assets/img/header-mobile.jpg.jpg";
 import IconLogo from "../../icons/IconLogo";
 import NavBar from "../NavBar";
 
 const Component: React.FC = () => {
   return (
     <header
-      className="flex h-[450px] justify-between bg-cover text-white"
-      style={{ backgroundImage: `url(${headerDesktop})` }}
+      className="bg-headerMobile lg:bg-headerDesktop flex h-[450px] justify-between bg-cover text-white"
+      // style={{ backgroundImage: `url(${headerDesktop})` }}
     >
       <IconLogo isLogo={false} />
 
