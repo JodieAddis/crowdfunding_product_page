@@ -1,5 +1,5 @@
 import Button from "../../Button";
-import Headings from "../../../typographies/Heading";
+import Heading from "../../../typographies/Heading";
 import Paragraph from "../../../typographies/Paragraph";
 
 interface textContent {
@@ -21,12 +21,12 @@ const Component: React.FC<textContent> = ({
 }) => {
   return (
     <>
-      <Headings kind="h4" content={title} css="text-sm font-bold mb-2" />
+      <Heading kind="h4" content={title} css="text-sm font-bold mb-2" />
       <Paragraph content={subtitle} css="text-keppel text-sm mb-5" />
       <Paragraph content={text} css="text-silver text-sm mb-5" />
       <div className="mb-4 flex flex-row">
         <Paragraph content={numberPrice} css="text-3xl font-bold" />
-        <Paragraph content={textPrice} css="text-silver self-center" />
+        <Paragraph content={textPrice} css="ml-2 text-silver self-center" />
       </div>
       <Button
         isIcon={false}

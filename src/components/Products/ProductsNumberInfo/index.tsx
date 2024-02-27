@@ -1,5 +1,5 @@
-import Headings from "../../../typographies/Heading";
-import Paragraphs from "../../../typographies/Paragraph";
+import Heading from "../../../typographies/Heading";
+import Paragraph from "../../../typographies/Paragraph";
 
 interface TextProps {
   title: string;
@@ -9,8 +9,8 @@ interface TextProps {
 const Component = ({ title, text }: TextProps) => {
   return (
     <>
-      <Headings kind="h3" content={title} css="text-3xl font-bold mb-2" />
-      <Paragraphs kind="p" content={text} css="text-silver text-sm mb-6" />
+      <Heading kind="h3" content={title} css="text-3xl font-bold mb-2" />
+      <Paragraph content={text} css="text-silver text-sm mb-6" />
     </>
   );
 };

@@ -1,4 +1,5 @@
 import headerDesktop from "../../assets/img/header-desktop.jpg";
+import headerMobile from "../../assets/img/header-mobile.jpg.jpg";
 import IconLogo from "../../icons/IconLogo";
 import NavBar from "../NavBar";
 
