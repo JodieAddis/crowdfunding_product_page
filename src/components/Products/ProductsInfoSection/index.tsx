@@ -29,8 +29,8 @@ const Component = () => {
             title="Bamboo Stand"
             subtitle="Pledge $25 or more"
             text={textBambooStand}
-            numberPrice="101"
-            textPrice="left"
+            numberDays="101"
+            textDays="left"
             textButton="Select reward"
           />
         </section>
@@ -39,8 +39,8 @@ const Component = () => {
             title="Black Edition Stand"
             subtitle="Pledge $75 or more"
             text={textBlackEdition}
-            numberPrice="64"
-            textPrice="left"
+            numberDays="64"
+            textDays="left"
             textButton="Select reward"
           />
         </section>
@@ -49,8 +49,8 @@ const Component = () => {
             title="Mahogany Special Edition"
             subtitle="Pledge $200 or more"
             text={textMahoganyEdition}
-            numberPrice="0"
-            textPrice="left"
+            numberDays="0"
+            textDays="left"
             textButton="Select reward"
           />
         </section>

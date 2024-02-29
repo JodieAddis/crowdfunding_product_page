@@ -5,7 +5,7 @@ import Paragraph from "../../../typographies/Paragraph";
 import useScreenSize from "../../../hook/useScreenSize";
 import IconBookMark from "../../../icons/IconBookMark";
 
-const Component: React.FC = () => {
+const Component = () => {
   const isMobile = useScreenSize();
   return (
     <>

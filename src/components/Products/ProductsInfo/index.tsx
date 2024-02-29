@@ -6,8 +6,8 @@ interface textContent {
   title: string;
   subtitle: string;
   text: string;
-  textPrice: string;
-  numberPrice: string;
+  textDays: string;
+  numberDays: string;
   textButton: string;
 }
 
@@ -15,8 +15,8 @@ const Component: React.FC<textContent> = ({
   title,
   subtitle,
   text,
-  textPrice,
-  numberPrice,
+  textDays,
+  numberDays,
   textButton,
 }) => {
   return (
@@ -25,8 +25,8 @@ const Component: React.FC<textContent> = ({
       <Paragraph content={subtitle} css="text-keppel text-sm mb-5" />
       <Paragraph content={text} css="text-silver text-sm mb-5" />
       <div className="mb-4 flex flex-row">
-        <Paragraph content={numberPrice} css="text-3xl font-bold" />
-        <Paragraph content={textPrice} css="ml-2 text-silver self-center" />
+        <Paragraph content={numberDays} css="text-3xl font-bold" />
+        <Paragraph content={textDays} css="ml-2 text-silver self-center" />
       </div>
       <Button
         isIcon={false}

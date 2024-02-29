@@ -1,7 +1,7 @@
 import PriceSectionLayout from "../../../layout/PriceSectionLayout";
 import ProductsNumberInfo from "../ProductsNumberInfo";
 
-const Component: React.FC = () => {
+const Component = () => {
   return (
     <>
       <div>
