@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import IconMenu from "../../icons/IconMenu";
 
-const Component: React.FC = () => {
+const Component = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
@@ -15,7 +15,6 @@ const Component: React.FC = () => {
             }}
           >
             <IconMenu isOpen={true} />
-            {/* Cross Icon */}
           </button>
           <div className="absolute  left-1/2 z-20 mt-10 w-80 translate-x-[-50%] rounded-lg bg-white text-black">
             <ul className="flex flex-col justify-start text-xl capitalize">

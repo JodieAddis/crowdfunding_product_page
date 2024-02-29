@@ -3,10 +3,7 @@ import NavBar from "../NavBar";
 
 const Component: React.FC = () => {
   return (
-    <header
-      className="bg-headerMobile lg:bg-headerDesktop flex h-[450px] justify-between bg-cover text-white"
-      // style={{ backgroundImage: `url(${headerDesktop})` }}
-    >
+    <header className="flex h-[450px] justify-between bg-headerMobile bg-cover text-white lg:bg-headerDesktop">
       <IconLogo isLogo={false} />
 
       <div className="flex justify-center">
