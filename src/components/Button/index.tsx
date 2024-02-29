@@ -4,15 +4,14 @@ interface ButtonProps {
   isIcon?: boolean;
   text: string;
   css: string;
-  cssText?: string;
 }
 
-const Component: React.FC<ButtonProps> = ({ isIcon, text, css, cssText }) => {
+const Component: React.FC<ButtonProps> = ({ isIcon, text, css }) => {
   return (
     <div>
       <button className={`flex flex-row rounded-full font-bold ${css}`}>
         {isIcon && <IconBookMark />}
-        <p className={`self-center py-4 ${cssText}`}>{text}</p>
+        <p className={`self-center py-4`}>{text}</p>
       </button>
     </div>
   );

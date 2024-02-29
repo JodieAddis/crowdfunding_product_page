@@ -1,13 +1,17 @@
 import IconLogo from "../../icons/IconLogo";
-import NavBar from "../NavBar";
+import NavBarDesktop from "../NavBarDesktop";
+import NavBarMobile from "../NavBarMobile";
 
-const Component: React.FC = () => {
+import useScreenSize from "../../hook/useScreenSize";
+
+const Component = () => {
+  const isMobile = useScreenSize();
   return (
     <header className="flex h-[450px] justify-between bg-headerMobile bg-cover text-white lg:bg-headerDesktop">
       <IconLogo isLogo={false} />
 
       <div className="flex justify-center">
-        <NavBar />
+        {isMobile ? <NavBarMobile /> : <NavBarDesktop />}
       </div>
     </header>
   );

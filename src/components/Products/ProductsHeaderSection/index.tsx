@@ -1,9 +1,9 @@
 import Button from "../../Button";
+import IconBookMark from "../../../icons/IconBookMark";
 import IconLogo from "../../../icons/IconLogo";
 import Heading from "../../../typographies/Heading";
 import Paragraph from "../../../typographies/Paragraph";
 import useScreenSize from "../../../hook/useScreenSize";
-import IconBookMark from "../../../icons/IconBookMark";
 
 const Component = () => {
   const isMobile = useScreenSize();
@@ -16,7 +16,7 @@ const Component = () => {
         <Heading
           kind="h1"
           content="Mastercraft Bamboo Monitor Riser"
-          css="font-extrabold capitalize text-center mx-5 lg:mx-0 text-xl lg:text-3xl mb-4 pt-12"
+          css="font-extrabold capitalize text-center mx-5 lg:mx-0 text-xl lg:text-3xl mb-4 mt-12"
         />
         <Paragraph
           content="A beautiful & handcrafted monitor stand to reduce neck and eye strain"
@@ -47,12 +47,6 @@ const Component = () => {
             </>
           )}
         </div>
-        <Button
-          text="Bookmarked"
-          isIcon={true}
-          css="bg-aquaHaze text-surfieGreen hover:text-doveGray lg:pr-10"
-          cssText="hidden lg:flex"
-        />
       </div>
     </>
   );

@@ -1,4 +1,3 @@
-import ProductsInfo from "../ProductsInfo";
 import {
   aboutSectionPartOne,
   aboutSectionPartTwo,
@@ -8,11 +7,12 @@ import {
 } from "../../../data/data";
 import Heading from "../../../typographies/Heading";
 import Paragraph from "../../../typographies/Paragraph";
+import ProductsInfo from "../ProductsInfo";
 
 const Component = () => {
   return (
     <>
-      <div className="mx-6 mt-4">
+      <div className="mx-6 mt-4 pt-8">
         <Heading
           kind="h3"
           content="About this project"

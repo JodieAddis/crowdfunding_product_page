@@ -17,7 +17,12 @@ const Component = () => {
           <ProductsNumberInfo title="56" text="days left" />
         </PriceSectionLayout>
         <section className="flex justify-center">
-          <input type="range" className="mb-8 w-64 bg-wildSand accent-keppel" />
+          <input
+            type="range"
+            value={56}
+            max={70}
+            className="pointer-events-none mb-8 w-64 bg-wildSand accent-keppel"
+          />
         </section>
       </div>
     </>
