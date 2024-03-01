@@ -11,7 +11,7 @@ import ProductsInfo from "../ProductsInfo";
 
 const Component = () => {
   return (
-    <>
+    <div className="lg:mx-4">
       <div className="mx-6 mt-4 pt-8">
         <Heading
           kind="h3"
@@ -55,7 +55,7 @@ const Component = () => {
           />
         </section>
       </div>
-    </>
+    </div>
   );
 };
 

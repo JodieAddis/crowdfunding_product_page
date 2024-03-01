@@ -4,10 +4,10 @@
 
 @layer components {
   .section {
-    @apply w-80 rounded-xl border-2 border-solid border-wildSand bg-white lg:w-1/2;
+    @apply w-80 rounded-xl border-2 border-solid border-black border-opacity-10 bg-white lg:w-1/2;
   }
   .subsection {
-    @apply mx-6  rounded-lg border-2 border-solid border-wildSand px-4 py-6;
+    @apply mx-6  rounded-lg border-2 border-solid border-black border-opacity-10 px-4 py-6;
   }
   .desktop-menu {
     @apply flex-row;
@@ -15,7 +15,16 @@
   .mobile-menu {
     @apply flex-col;
   }
-  .menu-itmes {
-    @apply hover:underline, cursor-pointer pb-6;
+  .menu-items {
+    @apply cursor-pointer pb-6 hover:underline;
+  }
+  #bookmark-btn:hover {
+    @apply hover:text-silver;
+    circle {
+      fill: #707070;
+      path {
+        fill: #b1b1b1;
+      }
+    }
   }
 }

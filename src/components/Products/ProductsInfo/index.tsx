@@ -19,10 +19,22 @@ const Component: React.FC<textContent> = ({
   numberDays,
   textButton,
 }) => {
+  const getOpacity = () => {
+    return numberDays === "0" ? "opacity-50" : "";
+  };
   return (
-    <>
-      <Heading kind="h4" content={title} css="text-sm font-bold mb-2" />
-      <Paragraph content={subtitle} css="text-keppel text-sm mb-5" />
+    <div className={`${getOpacity()} mx-3`}>
+      <div className="flex flex-col lg:flex-row lg:justify-between">
+        <Heading
+          kind="h4"
+          content={title}
+          css="text-sm lg:text-lg font-bold mb-2"
+        />
+        <Paragraph
+          content={subtitle}
+          css="text-keppel text-sm lg:text-base mb-5 font-medium"
+        />
+      </div>
       <Paragraph content={text} css="text-silver text-sm mb-6" />
       <div className="flex flex-col lg:flex-row lg:justify-between">
         <div className="mb-4 flex flex-row">
@@ -30,12 +42,11 @@ const Component: React.FC<textContent> = ({
           <Paragraph content={textDays} css="ml-2 text-silver self-center" />
         </div>
         <Button
-          isIcon={false}
           text={textButton}
           css="bg-keppel text-white px-10 text-sm hover:bg-surfieGreen"
         />
       </div>
-    </>
+    </div>
   );
 };
 

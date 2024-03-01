@@ -1,12 +1,15 @@
 import Button from "../../Button";
+import ButtonBookMark from "../../ButtonBookMark";
 import IconBookMark from "../../../icons/IconBookMark";
 import IconLogo from "../../../icons/IconLogo";
 import Heading from "../../../typographies/Heading";
 import Paragraph from "../../../typographies/Paragraph";
 import useScreenSize from "../../../hook/useScreenSize";
+import { useState } from "react";
 
 const Component = () => {
   const isMobile = useScreenSize();
+  const [isDisabled, setIsDisabled] = useState<boolean>(false);
   return (
     <>
       <div className=" flex justify-center">
@@ -27,23 +30,17 @@ const Component = () => {
             <>
               <Button
                 text="Back this project"
-                isIcon={false}
                 css="bg-surfieGreen text-white px-10"
               />
-              <IconBookMark />
+              <IconBookMark clicked={isDisabled} />
             </>
           ) : (
             <>
               <Button
                 text="Back this project"
-                isIcon={false}
                 css="bg-surfieGreen text-white px-10"
               />
-              <Button
-                text="Bookmarked"
-                isIcon={true}
-                css="bg-aquaHaze text-surfieGreen hover:text-doveGray pr-10"
-              />
+              <ButtonBookMark text="Bookmark" />
             </>
           )}
         </div>

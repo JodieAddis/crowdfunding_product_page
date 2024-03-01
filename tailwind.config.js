@@ -11,9 +11,10 @@ module.exports = {
         silver: "#7a7a7a", //Text color
         aquaHaze: "#f4f8f9", //bookmark button
         doveGray: "#707070",
-        keppel: "#3cb4ab", //acitve button
+        keppel: "#3cb4ab", //active button
         surfieGreen: "#157a74", //disabled button
         alabaster: "#fafafa", // main bg
+        mineShaft: "2f2f2f", //disabled bookmark button
       },
       backgroundImage: {
         headerDesktop: "url('/src/assets/img/header-desktop.jpg')",
