@@ -11,7 +11,7 @@ const Icon = ({ isOpen, onClick }: IconMenuProps) => {
           width="14"
           height="15"
           xmlns="http://www.w3.org/2000/svg"
-          className="z-40 cursor-pointer"
+          className="relative z-20 cursor-pointer"
           onClick={onClick}
         >
           <g fill="#FFF" fillRule="evenodd">

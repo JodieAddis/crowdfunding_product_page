@@ -15,7 +15,7 @@ function Page() {
           <div className=" section mb-6">
             <ProductsStatsSection />
           </div>
-          <div className="section">
+          <div className="section mb-6">
             <ProductsInfoSection />
           </div>
         </main>
