@@ -51,7 +51,7 @@ const Component = () => {
             text={textMahoganyEdition}
             numberDays="0"
             textDays="left"
-            textButton="Select reward"
+            textButton="Out of stock"
           />
         </section>
       </div>

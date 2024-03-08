@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Button from "../../Button";
 import ButtonBookMark from "../../ButtonBookMark";
 import IconBookMark from "../../../icons/IconBookMark";
@@ -5,16 +7,21 @@ import IconLogo from "../../../icons/IconLogo";
 import Heading from "../../../typographies/Heading";
 import Paragraph from "../../../typographies/Paragraph";
 import useScreenSize from "../../../hook/useScreenSize";
-import { useState } from "react";
 
 const Component = () => {
   const isMobile = useScreenSize();
-  const [isDisabled, setIsDisabled] = useState<boolean>(false);
+  const [isClicked, setIsClicked] = useState<boolean>(false);
+
+  const handleClick = () => {
+    setIsClicked((prevState) => !prevState);
+  };
+
   return (
     <>
-      <div className=" flex justify-center">
+      <div className="flex justify-center">
         <IconLogo isLogo={true} />
       </div>
+
       <div className="self-center rounded-xl border-2 border-solid border-wildSand bg-white">
         <Heading
           kind="h1"
@@ -25,6 +32,7 @@ const Component = () => {
           content="A beautiful & handcrafted monitor stand to reduce neck and eye strain"
           css="text-center mx-2 lg:mx-0 font-normal lg:font-medium"
         />
+
         <div className="my-10 flex flex-row justify-around">
           {isMobile ? (
             <>
@@ -32,7 +40,7 @@ const Component = () => {
                 text="Back this project"
                 css="bg-surfieGreen text-white px-10"
               />
-              <IconBookMark clicked={isDisabled} />
+              <IconBookMark isClicked={isClicked} handleClick={handleClick} />
             </>
           ) : (
             <>
@@ -40,7 +48,7 @@ const Component = () => {
                 text="Back this project"
                 css="bg-surfieGreen text-white px-10"
               />
-              <ButtonBookMark text="Bookmark" />
+              <ButtonBookMark />
             </>
           )}
         </div>

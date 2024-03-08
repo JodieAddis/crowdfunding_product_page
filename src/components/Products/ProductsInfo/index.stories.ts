@@ -18,7 +18,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const PageLogo: Story = {
+export const ProductSection: Story = {
   name: "Section info about product",
   args: {
     title: "Bamboo Stand",
@@ -27,5 +27,17 @@ export const PageLogo: Story = {
     textDays: "left",
     numberDays: "101",
     textButton: "Select reward",
+  },
+};
+
+export const SectionWithoutProduct: Story = {
+  name: "Section info without product",
+  args: {
+    title: "Bamboo Stand",
+    subtitle: "Pledge $25 or more",
+    text: "You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.",
+    textDays: "left",
+    numberDays: "0",
+    textButton: "Out of stock",
   },
 };

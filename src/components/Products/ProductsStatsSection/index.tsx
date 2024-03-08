@@ -6,6 +6,7 @@ import useScreenSize from "../../../hook/useScreenSize";
 
 const Component = () => {
   const isMobile = useScreenSize();
+
   return (
     <>
       <div className="mt-12">
@@ -33,8 +34,8 @@ const Component = () => {
         <section className="flex justify-center">
           <input
             type="range"
-            value={56}
-            max={70}
+            defaultValue={89914}
+            max={100000}
             className="pointer-events-none mb-8 w-64 border-none bg-wildSand accent-keppel lg:w-5/6"
           />
         </section>

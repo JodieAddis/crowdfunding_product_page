@@ -18,13 +18,13 @@ const Component = () => {
           </button>
           <div className="absolute  left-1/2 z-20 mt-10 w-80 translate-x-[-50%] rounded-lg bg-white text-black">
             <ul className="flex flex-col justify-start text-xl capitalize">
-              <li className="my-6 ml-10 w-80 cursor-pointer border-b-2 border-solid border-wildSand pb-6">
+              <li className="my-6 w-80 cursor-pointer border-b-2 border-solid border-wildSand pb-6 pl-10">
                 about
               </li>
-              <li className="my-6 ml-10 w-80 cursor-pointer border-b-2 border-solid border-wildSand pb-6">
+              <li className="w-80 cursor-pointer border-b-2 border-solid border-wildSand pb-6 pl-10">
                 discover
               </li>
-              <li className="ml-10 mt-6 w-80 cursor-pointer pb-6">
+              <li className="mt-6 w-80 cursor-pointer pb-6 pl-10">
                 get started
               </li>
             </ul>

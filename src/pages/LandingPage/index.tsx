@@ -9,7 +9,7 @@ function Page() {
       <div id="overlay" className="z-10 bg-black">
         <Header />
         <main className="flex flex-col items-center bg-alabaster">
-          <div className="section -mt-36 mb-6">
+          <div className="section -mt-36 mb-6" >
             <ProductsHeaderSection />
           </div>
           <div className=" section mb-6">

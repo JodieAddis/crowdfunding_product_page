@@ -2,6 +2,7 @@ import useScreenSize from "../../hook/useScreenSize";
 
 const Component = () => {
   const isMobile = useScreenSize();
+  
   return (
     <>
       {isMobile ? (

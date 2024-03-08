@@ -22,6 +22,7 @@ const Component: React.FC<textContent> = ({
   const getOpacity = () => {
     return numberDays === "0" ? "opacity-50" : "";
   };
+
   return (
     <div className={`${getOpacity()} mx-3`}>
       <div className="flex flex-col lg:flex-row lg:justify-between">
@@ -39,11 +40,15 @@ const Component: React.FC<textContent> = ({
       <div className="flex flex-col lg:flex-row lg:justify-between">
         <div className="mb-4 flex flex-row">
           <Paragraph content={numberDays} css="text-3xl font-bold" />
-          <Paragraph content={textDays} css="ml-2 text-silver self-center" />
+          <Paragraph content={textDays} css="ml-2 text-silver " />
         </div>
         <Button
           text={textButton}
-          css="bg-keppel text-white px-10 text-sm hover:bg-surfieGreen"
+          css={`
+            ${numberDays === "0"
+              ? "bg-black cursor-not-allowed"
+              : "bg-keppel hover:bg-surfieGreen"} text-white px-10 text-sm
+          `}
         />
       </div>
     </div>
