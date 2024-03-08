@@ -46,7 +46,7 @@ const Component: React.FC<textContent> = ({
           text={textButton}
           css={`
             ${numberDays === "0"
-              ? "bg-black cursor-not-allowed"
+              ? "bg-black cursor-not-allowed opacity-50"
               : "bg-keppel hover:bg-surfieGreen"} text-white px-10 text-sm
           `}
         />

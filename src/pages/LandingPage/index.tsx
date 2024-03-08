@@ -6,7 +6,7 @@ import ProductsStatsSection from "../../components/Products/ProductsStatsSection
 function Page() {
   return (
     <>
-      <div id="overlay" className="z-10 bg-black">
+      <div>
         <Header />
         <main className="flex flex-col items-center bg-alabaster">
           <div className="section -mt-36 mb-6" >

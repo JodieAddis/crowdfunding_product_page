@@ -18,7 +18,7 @@ const Component = () => {
 
   return (
     <>
-      <div className="flex justify-center">
+      <div className="relative">
         <IconLogo isLogo={true} />
       </div>
 

@@ -10,9 +10,7 @@ const Component = () => {
     <header className="flex h-[450px] justify-between bg-headerMobile bg-cover text-white lg:bg-headerDesktop">
       <IconLogo isLogo={false} />
 
-      <div className="self-cente flex justify-center">
-        {isMobile ? <NavBarMobile /> : <NavBarDesktop />}
-      </div>
+      {isMobile ? <NavBarMobile /> : <NavBarDesktop />}
     </header>
   );
 };

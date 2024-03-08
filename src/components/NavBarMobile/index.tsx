@@ -5,18 +5,18 @@ import IconMenu from "../../icons/IconMenu";
 const Component = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
+  const handleClick = () => {
+    setIsOpen((prevState) => !prevState);
+  };
+
   return (
-    <div className=" mr-10 mt-8">
+    <div className="mr-10 mt-8">
       {isOpen ? (
         <>
-          <button
-            onClick={() => {
-              setIsOpen(false);
-            }}
-          >
-            <IconMenu isOpen={true} />
-          </button>
-          <div className="absolute  left-1/2 z-20 mt-10 w-80 translate-x-[-50%] rounded-lg bg-white text-black">
+          <div className="fixed left-0 top-0 z- h-screen w-screen bg-gradient-to-b from-black to-white opacity-70"></div>
+
+          <IconMenu isOpen={true} onClick={handleClick} />
+          <div className="absolute left-1/2 z-10 mt-10 w-80 translate-x-[-50%] rounded-lg bg-white text-black">
             <ul className="flex flex-col justify-start text-xl capitalize">
               <li className="my-6 w-80 cursor-pointer border-b-2 border-solid border-wildSand pb-6 pl-10">
                 about
@@ -31,18 +31,9 @@ const Component = () => {
           </div>
         </>
       ) : (
-        <>
-          <div className="flex justify-end">
-            <button
-              onClick={() => {
-                setIsOpen(true);
-              }}
-              className="mb-20"
-            >
-              <IconMenu isOpen={false} />
-            </button>
-          </div>
-        </>
+        <div className="flex justify-end">
+          <IconMenu isOpen={false} onClick={handleClick} />
+        </div>
       )}
     </div>
   );
