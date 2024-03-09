@@ -32,4 +32,8 @@
   #bookmark-btn:hover {
     @apply hover:text-silver;
   }
+
+  .no-scroll {
+    @apply overflow-hidden;
+  }
 }

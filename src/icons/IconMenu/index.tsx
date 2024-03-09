@@ -1,6 +1,6 @@
 type IconMenuProps = {
   isOpen: boolean;
-  onClick?: () => void;
+  onClick?: (e: React.MouseEvent<SVGSVGElement, MouseEvent>) => void;
 };
 
 const Icon = ({ isOpen, onClick }: IconMenuProps) => {
