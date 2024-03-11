@@ -7,8 +7,8 @@ const meta = {
   component: Button,
   tags: ["autodocs"],
   argTypes: {
-    text: { description: "contenu texte du bouton" },
-    css: { description: "défini le style du bouton" },
+    text: { description: "Button text content" },
+    css: { description: "Determine the button style." },
   },
 } satisfies Meta<typeof Button>;
 
