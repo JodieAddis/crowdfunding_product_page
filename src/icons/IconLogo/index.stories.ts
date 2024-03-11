@@ -9,7 +9,7 @@ const meta = {
   argTypes: {
     isLogo: {
       description:
-        "Composant permettant d'afficher le logo ou le nom de la page en fonction de la valeur du booléen.",
+      "Component displaying the logo or the page name based on the boolean value.",
     },
   },
   parameters: {
