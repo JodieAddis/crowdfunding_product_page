@@ -9,7 +9,7 @@ interface TextProps {
 const Component = ({ title, text }: TextProps) => {
   return (
     <div className="flex flex-col">
-      <Heading kind="h3" content={title} css="text-3xl font-bold mb-2" />
+      <Heading kind="h3" content={title} css="text-3xl font-extrabold mb-2" />
       <Paragraph content={text} css="text-silver text-sm mb-6" />
     </div>
   );
