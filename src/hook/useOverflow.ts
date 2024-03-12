@@ -4,7 +4,7 @@ type useOverflowProp = {
   state: boolean;
 };
 
-export const useOverflow = (state: useOverflowProp) => {
+export const useOverflow = ({state}: useOverflowProp) => {
   useEffect(() => {
     const handleOverflow = (shouldOverflow: boolean) => {
       document.body.classList.toggle("no-scroll", shouldOverflow);
