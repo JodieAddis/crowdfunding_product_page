@@ -17,4 +17,4 @@ Product page for participatory funding where users can choose specific offers to
 
 ## Coding Technologies Used
 
- <img src="https://skillicons.dev/icons?i=git,html,tailwind,ts,storybook"/>
+ <img src="https://skillicons.dev/icons?i=git,html,tailwind,ts,react"/>
