@@ -1,0 +1,25 @@
+name: Deploy to Github Pages
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+
+      - name: Install Node versions
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: "npm"
+
+      - name: Install
+        run: npm i
+
+      - name: Linter
+        run: npm run linter
