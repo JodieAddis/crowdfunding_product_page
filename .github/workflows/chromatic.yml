@@ -8,23 +8,18 @@ on:
 
 # List of jobs
 jobs:
-  test:
-    # Operating System
+  chromatic:
     runs-on: ubuntu-latest
-    # Job steps
+
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
+
+      - name: Install dependencies
+        run: npm ci
+
+      - uses: chromaui/action@latest
         with:
-          node-version: 18
-          cache: "yarn"
-      - run: yarn
-      #👇 Adds Chromatic as a step in the workflow
-      - uses: chromaui/action@v1
-        # Options required for Chromatic's GitHub Action
-        with:
-          #👇 Chromatic projectToken,
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          exitZeroOnChanges: true
