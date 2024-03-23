@@ -1,0 +1,26 @@
+# Workflow name
+name: "Chromatic Publish"
+
+# Event for the workflow
+on:
+  push:
+    branches:
+      - chromatic
+
+# List of jobs
+jobs:
+  chromatic:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install dependencies
+        run: npm ci
+
+      - uses: chromaui/action@latest
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          exitZeroOnChanges: true

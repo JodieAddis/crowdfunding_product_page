@@ -6,6 +6,8 @@ Product page for participatory funding where users can choose specific offers to
 
 ![Desktop](src/assets/img/desktop.png)
 
+All stories are hosted on Chromatic at this [URL](https://65fea56c32d3f4e6395747c9-lhosmnuvto.chromatic.com/)
+
 ## Objectives
 
 - Make a selection of which pledge to make
