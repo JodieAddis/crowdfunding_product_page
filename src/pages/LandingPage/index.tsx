@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer";
 import Header from "../../components/header";
 import ProductsHeaderSection from "../../components/Products/ProductsHeaderSection";
 import ProductsInfoSection from "../../components/Products/ProductsInfoSection";
@@ -19,6 +20,9 @@ function Page() {
             <ProductsInfoSection />
           </div>
         </main>
+        <footer className=" mt-12 flex justify-center">
+          <Footer />
+        </footer>
       </div>
     </>
   );
